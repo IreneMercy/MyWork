@@ -62,6 +62,12 @@ header{
 .nav-link{
   color:pink;
 }
+#cv{
+  color:linear-gradient(to top,red, #red);
+}
+.text a i{
+  color: red;
+}
 li a{
   color:cyan;
 }
