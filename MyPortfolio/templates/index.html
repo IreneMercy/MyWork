@@ -1,1 +1,273 @@
-{{message}}
+{% extends 'base.html' %}
+{% load static%}
+{% block content %}
+<div class="content  text-white">
+      <div class="overlay2">
+        <header>
+          <div class="menu-toggler">
+            <div class="bar half start"></div>
+            <div class="bar "></div>
+            <div class="bar half end"></div>
+          </div>
+          <div class="intro " style="background:url('/static/images/coffee.jpg'); height: 100vh; background-size: cover; background-position: center;">
+            <div class="overlay2">
+
+              <nav class=" top-nav" >
+                <ul class="nav nav-list">
+                  <li><a href="/" class="nav-link">Home</a></li>
+                  <li><a href="#about" class="nav-link">About</a></li>
+                  <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                  <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+              </nav>
+              <div class="landing-text pt-5">
+                <div class="container">
+                  <div class="row pt-5">
+                    <div class="col-md-12 text-center">
+                      <h1 class="">Irene Mercy Oyoo</h1>
+                      <h5 class="pb-3 font-weight-bold">UI | UX Designer and Fullstack Developer</h5>
+                      <small style="opacity:0.9;">Coffee and Soccer Lover too</small>
+                  </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </header>
+      </div>
+      <section class="about mt-5 pt-5" id="about">
+        <div class="section-heading text-center">
+          <h1>About</h1>
+          <h6>Myself</h6>
+        </div>
+        <div class="about-details">
+          <div class="container">
+            <div class="row ">
+              <div class="col-md-3">
+              </div>
+              <div class="about-details">
+                <div class="col-md-8">
+                  <h6 class="text-center "><small class="" style="opacity:0.5;">~ Professionally</small></h6>
+
+                  <p class="ml-5">
+                     I'm a passionate  web developer.I have acquired skills and knowledge necessary
+                     to make a succesful project.
+                     <br>
+                     I enjoy every step of the design process, from discussion,
+                     collaboration to concept and execution.
+                     I love collaborating and working with a group because I get to learn a lot and improve my skills.
+                  </p>
+                  <br>
+                  <h6 class="text-center "><small style="opacity:0.5;">~ Apart From Coding</small></h6>
+                  <br>
+                  <p class="ml-5">I'm also in love with football, I like watching premier league and also going to watch local tournaments in the neighborhood on weekends.
+                   <br>
+                    I take a lot of coffee through the day, it relaxes my mind and relieve stress....Hahaaa
+                  </p>
+                  <br>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolio mt-5 pt-3 mb-5 pb-5" id="portfolio">
+        <div class="container">
+          <div class="section-heading text-center mt-5">
+            <h1>Portfolio</h1>
+            <h6>Graphics</h6>
+          </div>
+          <div class="portfolio-item">
+            <div class="container-fluid bg-transparent">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="portfolio-img content">
+                    <!-- Card -->
+                      <div class="">
+                        <div class="card pb-1">
+                          <div class="view overlay">
+                            <img src="{% static 'images/awards1.png'%}" class="card-img-top img-thumbnail" width="100%">
+                          </div>
+                          <!-- Card content -->
+                          <div class="">
+                          <!-- Title -->
+                            <h6 class="card-title text-dark text-center text-uppercase mt-2">Project Review</h6>
+                          <!-- Text -->
+                            <p class="card-text text-dark ml-3"><small>Project-Review is a platform where users can upload their projects and project detail, the project is to be rated and reviewed by other users.</small></p>
+                          <!-- Button -->
+                            <a href="https://projoreview.herokuapp.com/" target="_blank" class="btn btn-elegant btn-sm ml-5 mt-4">Visit site</a>
+                            <a href="https://github.com/IreneMercy/Project-Review" target="_blank" class="btn btn-elegant btn-sm mt-4">View Details</a>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    <!-- Card -->
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="portfolio-img content">
+                    <!-- Card -->
+                      <div class="">
+                        <div class="card">
+                          <div class="view overlay">
+                            <img src="{% static 'images/mtoto.png'%}" class="card-img-top img-thumbnail" width="100%">
+                          </div>
+                          <!-- Card content -->
+                          <div class="">
+                          <!-- Title -->
+                            <h6 class="card-title text-dark text-center text-uppercase mt-2">Mtoto</h6>
+                          <!-- Text -->
+                            <p class="card-text text-dark ml-3"><small>Mtoto is a group project of six, where I worked on the frontend. <br>
+                              A web app that measures a child's EI ages 8-12 and gives feedback to be used by caregivers.</small></p>
+                          <!-- Button -->
+                            <a href="https://washucode.github.io/MTOTO/" target="_blank" class="btn btn-elegant btn-sm ml-5">Visit site</a>
+                            <a href="https://github.com/IreneMercy/MTOTO" target="_blank" class="btn btn-elegant btn-sm">View Details</a>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    <!-- Card -->
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="portfolio-img content">
+                    <!-- Card -->
+                      <div class="">
+                        <div class="card">
+                          <div class="view overlay">
+                            <img src="{% static 'images/hood.png'%}" class="card-img-top img-thumbnail" width="100%">
+                          </div>
+                          <!-- Card content -->
+                          <div class="">
+                          <!-- Title -->
+                            <h6 class="card-title text-dark text-center text-uppercase mt-2">Neighborhood</h6>
+                          <!-- Text -->
+                            <p class="card-text text-dark ml-3"><small>Next-door is a web application that allow users to be in the loop about everything happening in their neighborhood. From contact information of different handyman to meeting announcements.</small></p>
+                          <!-- Button -->
+                            <a href="https://thehood.herokuapp.com/" target="_blank" class="btn btn-elegant btn-sm ml-5">Visit site</a>
+                            <a href="https://github.com/IreneMercy/NextDoor" target="_blank" class="btn btn-elegant btn-sm">View Details</a>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    <!-- Card -->
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-4 mt-3">
+                  <div class="portfolio-img content">
+                    <!-- Card -->
+                      <div class="">
+                        <div class="card pb-2">
+                          <div class="view overlay">
+                            <img src="{% static 'images/github.png'%}" class="card-img-top img-thumbnail" width="100%">
+                          </div>
+                          <!-- Card content -->
+                          <div class="">
+                          <!-- Title -->
+                            <h6 class="card-title text-dark text-center text-uppercase mt-2">Github Search</h6>
+                          <!-- Text -->
+                            <p class="card-text text-dark ml-3"><small>This is a website where users may enter a GitHub username into a form, submit it, and see names and descriptions of that person's public repositories.</small></p>
+                          <!-- Button -->
+                            <a href="https://irenemercy.github.io/Github-Project/" target="_blank" class="btn btn-elegant btn-sm ml-5 mt-4">Visit site</a>
+                            <a href="https://github.com/IreneMercy/Github-Project" target="_blank" class="btn btn-elegant btn-sm mt-4">View Details</a>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    <!-- Card -->
+                  </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                  <div class="portfolio-img content">
+                    <!-- Card -->
+                      <div class="">
+                        <div class="card pb-2">
+                          <div class="view overlay">
+                            <img src="{% static 'images/pitch.png'%}" class="card-img-top img-thumbnail" width="100%">
+                          </div>
+                          <!-- Card content -->
+                          <div class="">
+                          <!-- Title -->
+                            <h6 class="card-title text-dark text-center text-uppercase mt-2">Pitch</h6>
+                          <!-- Text -->
+                            <p class="card-text text-dark ml-3"><small>This is an application that allow users to  post a one minute pitch, downvote, upvote and comment on a pitch.</small></p>
+                          <!-- Button -->
+                            <a href="https://pitchpoint.herokuapp.com/" target="_blank" class="btn btn-elegant btn-sm ml-5 mt-4">Visit site</a>
+                            <a href="https://github.com/IreneMercy/Pitch-List" target="_blank" class="btn btn-elegant btn-sm mt-4">View Details</a>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    <!-- Card -->
+                  </div>
+                </div>
+                <div class="col-md-4 mt-3">
+                  <div class="portfolio-img content">
+                    <!-- Card -->
+                      <div class="">
+                        <div class="card pb-2">
+                          <div class="view overlay">
+                            <img src="{% static 'images/instapic.png'%}" class="card-img-top img-thumbnail" width="100%">
+                          </div>
+                          <!-- Card content -->
+                          <div class="">
+                          <!-- Title -->
+                            <h6 class="card-title text-dark text-center text-uppercase mt-2">InstaPic</h6>
+                          <!-- Text -->
+                            <p class="card-text text-dark ml-3"><small>InstaPic is a clone of instagram, where users can upload their photos and add caption to the photos for friends to view.</small></p>
+                          <!-- Button -->
+                            <a href="https://dinstapic.herokuapp.com/" target="_blank" class="btn btn-elegant btn-sm ml-5 mt-4">Visit site</a>
+                            <a href="https://github.com/IreneMercy/Instapic" target="_blank" class="btn btn-elegant btn-sm mt-4">View Details</a>
+
+                          </div>
+                        </div>
+
+                      </div>
+                    <!-- Card -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </section>
+      <section class="contact mt-5 pt-5" id="contact">
+        <div class="container">
+          <div class="section-heading text-center">
+            <h1>Contact</h1>
+            <h6>Let's work together</h6>
+            <p class="">Email: <small>irenemercy700@gmail.com</small></p>
+            <ul class="nav-list">
+              <li>
+                <a href="https://twitter.com/irene_oyoo" class="icon-link">
+                  <i class="fa fa-twitter-square fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://www.linkedin.com/in/irene-mercy-oyoo-405611160/" class="icon-link">
+                  <i class="fa fa-linkedin-square fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://github.com/IreneMercy" class="icon-link">
+                  <i class="fa fa-github-square fa-2x"></i>
+                </a>
+              </li>
+              <li>
+                <a href="https://bitbucket.org/%7B9e28ecc8-f850-4b43-ad3b-ca4eac798d04%7D/" class="icon-link">
+                  <i class="fa fa-bitbucket-square fa-2x"></i>
+                </a>
+              </li>
+              <iframe src="https://giphy.com/embed/3htAzob87OfMvAS5Yp" width="100px" height="50" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/playmobil-football-3htAzob87OfMvAS5Yp"></a></p>
+            </ul>
+          </div>
+        </div>
+      </section>
+</div>
+{% endblock %}
