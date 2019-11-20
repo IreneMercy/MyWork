@@ -62,14 +62,16 @@ header{
 .nav-link{
   color:pink;
 }
-#cv{
-  color:linear-gradient(to top,red, #red);
+
+.cont{
+  float:right;
+  color:pink;
 }
 .text a i{
-  color: red;
+  color: pink;
 }
 li a{
-  color:cyan;
+  color:pink;
 }
 li{
   margin: 0 1rem;
@@ -198,9 +200,7 @@ li{
 .social-media i{
   transition:color 650ms;
 }
-.fa-twitter-square:hover{
-  color: #38a1f3;
-}
+
 .container{
   width: 90%;
   max-width: 120rem;
