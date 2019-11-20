@@ -23,7 +23,6 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MODE=config("MODE", default="dev")
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = '((ks#gzv!b*i#h@xvar9io@1@hd(e&03cxuw%#5e2s3nu4xyjt'
-SECRET_KEY = config('SECRET_KEY')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = config('DEBUG', default=False, cast=bool)
