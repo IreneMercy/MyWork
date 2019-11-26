@@ -65,13 +65,13 @@ header{
 
 .cont{
   float:right;
-  color:pink;
+  color:cyan;
 }
 .text a i{
-  color: pink;
+  color: cyan;
 }
 li a{
-  color:pink;
+  color:rgb(51, 181, 229);;
 }
 li{
   margin: 0 1rem;
