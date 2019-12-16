@@ -51,6 +51,9 @@ header{
   transition:650ms cubic-bezier(1,0,0,1);
 
 }
+.index{
+  z-index: 100
+}
 .nav-list{
   list-style-type: none;
   width: 100%;
@@ -114,14 +117,17 @@ li{
 
 .bar{
   background:linear-gradient(to right,cyan, #fd57bf);
-  width: 100%;
+  width: 80%;
   height: 4px;
   border-radius: .8rem;
+  margin-left:20%;
+
 
 }
 
 .bar.half{
-  width:100%;
+  width:80%;
+  margin-left:20%;
 
 }
 .open .bar.start{
@@ -210,7 +216,7 @@ li{
 }
 .section-heading{
   text-align: center;
-  margin-bottom: 10rem;
+  margin-bottom:5rem;
 
 }
 .section-heading h1{
@@ -306,4 +312,29 @@ li{
 
 .portfolio-img{
   flex: 1;
+}
+/* skills icon */
+.ftext{
+  color: yellow;
+}
+.django{
+  color: #013220;
+}
+.js{
+  color: cyan;
+}
+.bootstrap{
+  color:purple;
+}
+.css{
+  color:skyblue;
+}
+.html{
+  color:orange;
+}
+.angular{
+  color: red;
+}
+.photoshop{
+  color:#2B59C3;
 }
