@@ -2,72 +2,87 @@
 {% load static%}
 {% block content %}
 <div class="content  text-white">
-      <div class="overlay2">
-        <header>
-          <div class="menu-toggler">
-            <div class="bar half start"></div>
-            <div class="bar "></div>
-            <div class="bar half end"></div>
-          </div>
-          <div class="intro " style="background:url('/static/images/coffee.jpg'); height: 100vh; background-size: cover; background-position: center;">
-            <div class="overlay2">
+<section id="home">
+  <div class="overlay2">
+    <header>
+      <div class="menu-toggler">
+        <div class="bar half start"></div>
+        <div class="bar "></div>
+        <div class="bar half end"></div>
+      </div>
+      <div class="intro " style="background:url('/static/images/coffee.jpg'); height: 100vh; background-size: cover; background-position: center;">
+        <div class="overlay2">
 
-              <nav class=" top-nav" >
-                <ul class="nav nav-list">
-                  <li><a href="/" class="nav-link">Home</a></li>
-                  <li><a href="#about" class="nav-link">About</a></li>
-                  <li><a href="#portfolio" class="nav-link">Applications</a></li>
-                  <li><a href="#contact" class="nav-link">Contact</a></li>
-                </ul>
-              </nav>
-              <div class="landing-text pt-5">
-                <div class="container">
-                  <div class="row pt-5">
-                    <div class="col-md-12 text-center">
-                      <h1 class="">Irene Mercy Oyoo</h1>
-                      <h5 class="pb-3 font-weight-bold">UI | UX Designer and Fullstack Developer</h5>
-                      <small style="opacity:0.9;">Coffee and Soccer Lover too</small>
-                  </div>
-                  </div>
-                </div>
+          <nav class=" top-nav" >
+            <ul class="nav nav-list">
+              <li><a href="/" class="nav-link">Home</a></li>
+              <li><a href="#about" class="nav-link">About</a></li>
+              <li><a href="#portfolio" class="nav-link">Applications</a></li>
+              <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+          </nav>
+          <div class="landing-text pt-5">
+            <div class="container">
+              <div class="row pt-5">
+                <div class="col-md-12 text-center">
+                  <h1 class="">Irene Mercy Oyoo</h1>
+                  <h5 class="pb-3 font-weight-bold">UI | UX Designer and Fullstack Developer</h5>
+                  <small style="opacity:0.9;">Coffee and Soccer Lover too</small>
+              </div>
               </div>
             </div>
           </div>
-        </header>
+        </div>
       </div>
+    </header>
+  </div>
+</section>
+    <div class="index">
       <section class="about mt-5 pt-5" id="about">
         <div class="section-heading text-center">
           <h1>About</h1>
           <h6>Myself</h6>
         </div>
         <div class="about-details">
-          <div class="container">
-            <div class="row ">
-              <div class="col-md-3">
-              </div>
-              <div class="about-details">
-                <div class="col-md-8">
-                  <h6 class="text-center "><small class="" style="opacity:0.5;">~ Professionally</small></h6>
-
-                  <p class="ml-5">
-                     I'm a passionate  web developer.I have acquired skills and knowledge necessary
-                     to make a succesful project.
-                     <br>
-                     I enjoy every step of the design process, from discussion,
-                     collaboration to concept and execution.
-                     I love collaborating and working with a group because I get to learn a lot and improve my skills.
-                  </p>
-                  <br>
-                  <h6 class="text-center "><small style="opacity:0.5;">~ Apart From Coding</small></h6>
-                  <br>
-                  <p class="ml-5">I'm also in love with football, I like watching premier league and also going to watch local tournaments in the neighborhood on weekends.
-                   <br>
-                    I take a lot of coffee through the day, it relaxes my mind and relieve stress....Hahaaa
-                  </p>
-                  <br>
-                </div>
-              </div>
-            </div>
+          <div class="container-fluid">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col-md-6">
+                        <h6 class="text-center "><small class="" style="opacity:0.5;">~ Professionally</small></h6>
+                        <p class="">
+                           I'm a passionate  web developer.I have acquired skills and knowledge necessary
+                           to make a succesful project.
+                           I enjoy every step of the design process, from discussion,
+                           collaboration to concept and execution.
+                           <br>
+                           I love collaborating and working with a group because I get to learn a lot and improve my skills.
+                        </p>
+                        <br>
+                        <h6 class="text-center "><small style="opacity:0.5;">~ Apart From Coding</small></h6>
+                        <p class="">I'm also in love with football, I like watching premier league and also going to watch local tournaments in the neighborhood on weekends.
+                         <br>
+                          I take a lot of coffee through the day, it relaxes my mind and relieve stress....Hahaaa
+                        </p>
+                        <br>
+                      </div>
+                      <div class="col-md-2"></div>
+                      <div class="col-md-4">
+                        <h6 class="ml-5 mt-2"><small class="" style="opacity:0.5;">~Skills</small></h6>
+                        <ul>
+                          <li class="python"><strong>Python</strong><img class="pyicon ml-1" src="{% static 'images/py.png' %}" alt="" width="20%"></li>
+                          <li class="ftext"><strong>Flask</strong><img class="flask ml-1" src="{% static 'images/flasklogo1.png' %}" alt="" width="18%"></li>
+                          <li class="django"><strong>Django</strong><img class="djangoicon" src="{% static 'images/django1.jpg' %}" alt="" width="20%"></li>
+                          <li class="js"><strong>Javascript</strong><img class="jsicon" src="{% static 'images/jjs.png' %}" alt="" width="20%"></li>
+                          <li class="bootstrap"><strong>Bootstrap</strong><img class="booticon" src="{% static 'images/boot1.png' %}" alt="" width="20%"></li>
+                          <li class="css"><strong>CSS3</strong><img class="cssicon" src="{% static 'images/css1.jpg' %}" alt="" width="20%"></li>
+                          <li class="html"><strong>HTML5</strong><img class="htmlicon" src="{% static 'images/html.png' %}" alt="" width="20%"></li>
+                          <li class="angular"><strong>Angular</strong><img class="angularicon ml-1" src="{% static 'images/angular1.png' %}" alt="" width="20%"></li>
+                          <li class="photoshop"><strong>Photoshop</strong><img class="photoicon ml-1" src="{% static 'images/photo.png' %}" alt="" width="20%"></li>
+                        </ul>
+                        <!-- <img src="{% static 'images/mio.jpg' %}" alt=""> -->
+                      </div>
+                    </div>
+                  </div>
           </div>
         </div>
       </section>
@@ -269,9 +284,10 @@
               </li>
               <iframe src="https://giphy.com/embed/3htAzob87OfMvAS5Yp" width="50px" height="50" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/stickers/playmobil-football-3htAzob87OfMvAS5Yp"></a></p>
             </ul>
-            <a class="cont" href="/">&#8648;</a>
+            <a class="cont" href="#home">&#8648;</a>
           </div>
         </div>
       </section>
+    </div>
 </div>
 {% endblock %}
