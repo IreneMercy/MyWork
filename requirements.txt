@@ -13,7 +13,7 @@ django-star-ratings==0.8.0
 django-tinymce==2.8.0
 djangorestframework==3.10.3
 gunicorn==19.9.0
-Pillow==6.2.0
+Pillow==9.0.1
 psycopg2==2.8.3
 python-decouple==3.1
 python-dotenv==0.10.3
